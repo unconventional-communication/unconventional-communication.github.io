@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unconventional Communication | CogSci 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <nav class="navbar">
+            <a href="#overview">overview</a>
+            <a href="#schedule">schedule</a>
+            <a href="#team">team</a>
+        </nav>
+
+        <div style="height: 65vh"></div>
+        <h1>unconventional communication</h1>
+        <h2>making meaning across modalities</h2>
+        <div style="height: 20vh"></div>
+        
+        <h3 id="overview">overview</h3>
+        <p><i>Unconventional communication: making meaning across modalities</i> is a workshop bringing together research on human communication across a wide range of distinct modalities—including natural language, visual media, actions, sound, and environmental manipulations.</p>
+        <p>What determines how and when people make use of any given modality for ad-hoc communication?</p>
+
+        <h3 id="schedule">schedule</h3>
+        <p>TBA</p>
+
+        <h3 id="team">team</h3>
+        <p>Arnav Verma</p>
+        <p>Lio Wong</p>
+        <p>Matthew Caren</p>
+        <p>Robert Hawkins</p>
+        <p>Arvind Satyanarayan</p>
+        <p>Judy Fan</p>
+    </div>
+
+    <script>
+        function updateBackground() {
+            const alpha = Math.max(0, 1 - (window.scrollY / window.innerHeight));
+            document.body.style.setProperty('--bg-opacity', alpha);
+        }
+        window.addEventListener('scroll', updateBackground);
+        updateBackground();
+    </script>
+</body>
+</html>
