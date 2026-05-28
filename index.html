@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unconventional Communication Workshop</title>
     <meta name="description" content="Unconventional Communication: Making Meaning Across Modalities is a workshop at CogSci 2026 exploring human communication across various modalities.">
+    <link rel="icon" href="img/favicon.ico" sizes="any">
+    <link rel="icon" href="img/favicon-96x96.png" type="image/png" sizes="96x96">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,26 +24,55 @@
         <div style="height: 20vh"></div>
         
         <h3 id="overview">overview</h3>
-        <p><i>Unconventional communication: making meaning across modalities</i> is a workshop bringing together research on human communication across a wide range of modalities—including natural language, visual media, actions, sound, and environmental manipulations.</p>
-        <p>What determines how and when people make use of any given modality for ad-hoc communication?</p>
+        <p><i>Unconventional communication: making meaning across modalities</i> is a workshop on how people make meaning from unconventional symbols and signs.</p>
+        
+        <p>Most research on human communication focuses on how people use well-developed, conventionalized <b>natural languages</b>. In this workshop, we instead ask how people use and understand <b>ad-hoc</b> communicative actions, across a wide range of different modalities: a pile of dishes left on the table, an invented gesture, a yelp, a freehand sketch.</p>
+        
+        <p><b>What determines how people make use of any given modality for ad-hoc communication?</b> How does that relate to their knowledge of conventionalized language?</p>
 
         <h3 id="schedule">schedule</h3>
         <p>The workshop will take place on Wednesday, July 22 from 8:30am to 12pm.</p>
         <p>Schedule TBA.</p>
 
         <h3 id="team">team</h3>
-        <p><a href="https://www.arnavverma.com/">Arnav Verma</a></p>
-        <p><a href="https://web.mit.edu/zyzzyva/www/academic.html">Lio Wong</a></p>
-        <p><a href="https://matthewcaren.github.io/">Matthew Caren</a></p>
-        <p><a href="https://rdhawkins.com/">Robert Hawkins</a></p>
-        <p><a href="https://arvindsatya.com/">Arvind Satyanarayan</a></p>
-        <p><a href="https://cogtoolslab.github.io/people.html">Judy Fan</a></p>
+        <div class="team-grid">
+            <div class="person">
+                <img src="img/people/arnav.jpg" alt="Arnav Verma" class="team-photo">
+                <div class="team-name"><a href="https://www.arnavverma.com/"><b>Arnav Verma</b></a></div>
+                <div class="team-institution">MIT</div>
+            </div>
+            <div class="person">
+                <img src="img/people/lio.png" alt="Lio Wong" class="team-photo">
+                <div class="team-name"><a href="https://web.mit.edu/zyzzyva/www/academic.html"><b>Lio Wong</b></a></div>
+                <div class="team-institution">Stanford University</div>
+            </div>
+            <div class="person">
+                <img src="img/people/matt.jpg" alt="Matthew Caren" class="team-photo">
+                <div class="team-name"><a href="https://matthewcaren.github.io/"><b>Matthew Caren</b></a></div>
+                <div class="team-institution">Stanford University</div>
+            </div>
+            <div class="person">
+                <img src="img/people/robert.webp" alt="Robert Hawkins" class="team-photo">
+                <div class="team-name"><a href="https://rdhawkins.com/"><b>Robert Hawkins</b></a></div>
+                <div class="team-institution">Stanford University</div>
+            </div>
+            <div class="person">
+                <img src="img/people/arvind.jpg" alt="Arvind Satyanarayan" class="team-photo">
+                <div class="team-name"><a href="https://arvindsatya.com/"><b>Arvind Satyanarayan</b></a></div>
+                <div class="team-institution">MIT</div>
+            </div>
+            <div class="person">
+                <img src="img/people/judy.png" alt="Judy Fan" class="team-photo">
+                <div class="team-name"><a href="https://cogtoolslab.github.io/people.html"><b>Judy Fan</b></a></div>
+                <div class="team-institution">Stanford University</div>
+            </div>
+        </div>
     </div>
-    <div style="height: 10vh"></div>
+    <div style="height: 20vh"></div>
 
     <script>
         function updateBackground() {
-            const alpha = Math.max(0, 1 - (window.scrollY / window.innerHeight));
+            const alpha = Math.max(0, 2 - 3 * (window.scrollY / window.innerHeight));
             document.body.style.setProperty('--bg-opacity', alpha);
         }
         window.addEventListener('scroll', updateBackground);
