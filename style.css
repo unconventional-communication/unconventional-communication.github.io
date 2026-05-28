@@ -32,18 +32,21 @@ h1 {
     margin: 0;
 }
 h2 {
-    margin-top: 10px;
+    margin-top: 5px;
     font-weight: normal;
 }
 h3 {
     font-size: 1.75em;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-bottom: 15px;
 }
 p {
-    font-size: 1.2em;
-    line-height: 1.6;
+    font-size: 1.1em;
+    line-height: 1.3em;
     margin: 0 0 15px 0;
+}
+a {
+    color: inherit;
 }
 .navbar {
     display: flex;
@@ -54,7 +57,9 @@ p {
 .navbar a {
     color: #FF0000;
     text-decoration: none;
-    font-weight: bold;
+}
+.navbar a:last-child {
+    margin-left: auto;
 }
 .navbar a:hover {
     text-decoration: underline;
