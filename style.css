@@ -3,7 +3,6 @@ body {
     padding: 0;
     font-family: Helvetica, Arial, sans-serif;
     color: #FF0000;
-    /* Background styling */
     background-color: #ffffff;
 }
 
@@ -37,7 +36,7 @@ h2 {
 }
 h3 {
     font-size: 1.75em;
-    padding-top: 60px;
+    padding-top: 50px;
     margin-bottom: 15px;
 }
 p {
