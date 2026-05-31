@@ -37,7 +37,7 @@ h2 {
 }
 h3 {
     font-size: 1.75em;
-    margin-top: 60px;
+    padding-top: 60px;
     margin-bottom: 15px;
 }
 p {
@@ -63,6 +63,82 @@ a {
 }
 .navbar a:hover {
     text-decoration: underline;
+}
+
+.schedule-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 50px 0 120px 0;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.timeline-square {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    background-color: #ff0000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.timeline-square--plain {
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.timeline-square--empty {
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: transparent;
+    border: 2px solid #ff0000;
+}
+
+.timeline-item:not(:last-child) .timeline-square::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 40px;
+    background-color: #ff0000;
+}
+
+.timeline-text {
+    max-width: 720px;
+}
+
+.timeline-time {
+    margin: 0 0 5px 0;
+    font-size: 1.1em;
+    line-height: 1.2em;
+}
+
+.timeline-text h4 {
+    margin: 0;
+    font-size: 1.32em;
+    line-height: 1.25em;
+    font-weight: 700;
+}
+
+.timeline-affiliation {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.2em;
 }
 
 .team-grid {
@@ -96,4 +172,14 @@ a {
 .team-institution {
     text-align: left;
     font-size: 1em;
+}
+
+@media (max-width: 700px) {
+    .timeline-item {
+        gap: 14px;
+    }
+
+    .timeline-text {
+        max-width: none;
+    }
 }
